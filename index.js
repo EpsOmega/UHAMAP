@@ -113,20 +113,12 @@ if (lib === "MORTENSEN") {
         return;
     }
 
-    // ---------------------------------------
-    // MORE MORTENSEN LOCATIONS GO HERE (SHELVES, MEDIA, REF, ETC.)
-    // ---------------------------------------
-
-} // END MORTENSEN LIBRARY BLOCK
-
-
 
 // ---- MICROFORM OVERRIDE ----
 //const callnum = (params.get("ccn") || "").toLowerCase();
 //const location = (params.get("loc") || "").toLowerCase();
 
-if (lib === "MORTENSEN" && loc.includes("MICRO")) {
-
+if (loc.includes("MICRO")) {
     $('#row2').show();
     $('#msvg2').show();
     //$('#loc').text("Mortensen Library Microform");
@@ -136,6 +128,17 @@ if (lib === "MORTENSEN" && loc.includes("MICRO")) {
     matchFound = true;
     return;
 }// ---- MICROFORM OVERRIDE ----
+
+
+    // ---------------------------------------
+    // MORE MORTENSEN LOCATIONS GO HERE (SHELVES, MEDIA, REF, ETC.)
+    // ---------------------------------------
+
+} // END MORTENSEN LIBRARY BLOCK
+
+
+
+
 
 
 
