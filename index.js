@@ -32,70 +32,93 @@ $('#lib').text(lib);
 $('#ccn').text(decodedCcn);
 
 // ==========================================
-// UNIVERSAL ONLINE HANDLER (RUNS FIRST)
 // ==========================================
-if (loc === "ONLINE") {
+// UNIVERSAL ONLINE HANDLER (LIBRARY-FIRST)
+// ==========================================
 
-    // ALLEN LIBRARY
-    if (lib === "ALLEN") {
+// ==========================================
+// ALLEN LIBRARY  (LIB IS KING)
+// ==========================================
+//ALLEN LIBRARY BELOW AND BEGINS HERE
+if (lib === "ALLEN") {
 
-        // Allen is always Lower Level (1st Floor)
+    // --------------------------
+    // ONLINE
+    // --------------------------
+    if (loc === "ONLINE") {
+
         $('#row1').show();
         $('#msvg1').show();
 
-        highlightSvg('#cell-ALLEN_CIRCULATION_DESK');   // FIRST
-        $('#loc').text("Lower Level (1st Floor) Ask at Circulation Desk");  // SECOND
+        highlightSvg('#cell-ALLEN_CIRCULATION_DESK');
+        $('#loc').text("Lower Level (1st Floor) Ask at Circulation Desk");
 
         return;
     }
 
-    // MORTENSEN LIBRARY
-    if (lib === "MORTENSEN") {
+    // --------------------------
+    // UNASSIGNED
+    // --------------------------
+    if (loc === "UNASSIGNED") {
 
-        // Mortensen circulation is on Main Level (2nd Floor)
-        $('#row2').show();
-        $('#msvg2').show();
-
-        highlightSvg('#cell-MORTENSEN_F2_CIRCULATION');   // FIRST
-        $('#loc').text("Main Level (2nd Floor) Ask at Circulation Desk");  // SECOND
-
-        return;
-    }
-}//if (loc === "ONLINE") {
-
-
-
-// ==========================================
-// UNIVERSAL UNASSIGNED HANDLER (RUNS SECOND)
-// ==========================================
-if (loc === "UNASSIGNED") {
-
-    // ALLEN LIBRARY
-    if (lib === "ALLEN") {
-
-        // Allen is always Lower Level (1st Floor)
         $('#row1').show();
         $('#msvg1').show();
 
-        highlightSvg('#cell-ALLEN_CIRCULATION_DESK');   // FIRST
-        $('#loc').text("Lower Level (1st Floor) Ask at Circulation Desk");  // SECOND
+        highlightSvg('#cell-ALLEN_CIRCULATION_DESK');
+        $('#loc').text("Lower Level (1st Floor) Ask at Circulation Desk");
 
         return;
     }
 
-    // MORTENSEN LIBRARY
-    if (lib === "MORTENSEN") {
+    // ---------------------------------------
+    // MORE ALLEN LOCATIONS GO HERE (SHELVES, DANCE, M-RANGES, ETC.)
+    // ---------------------------------------
 
-        // Mortensen circulation is on Main Level (2nd Floor)
+} // END ALLEN LIBRARY BLOCK
+
+//ALLEN LIBRARY ABOVE AND ENDS HERE
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//MORTENSEN LIBRARY BELOW AND BEGINS HERE
+// ==========================================
+// MORTENSEN LIBRARY  (LIB IS KING)
+// ==========================================
+if (lib === "MORTENSEN") {
+
+    // --------------------------
+    // ONLINE
+    // --------------------------
+    if (loc === "ONLINE") {
+
         $('#row2').show();
         $('#msvg2').show();
 
-        highlightSvg('#cell-MORTENSEN_F2_CIRCULATION');   // FIRST
-        $('#loc').text("Main Level (2nd Floor) Ask at Circulation Desk");  // SECOND
+        highlightSvg('#cell-MORTENSEN_F2_CIRCULATION');
+        $('#loc').text("Main Level (2nd Floor) Ask at Circulation Desk");
 
         return;
     }
-}//if (loc === "UNASSIGNED") {
+
+    // --------------------------
+    // UNASSIGNED
+    // --------------------------
+    if (loc === "UNASSIGNED") {
+
+        $('#row2').show();
+        $('#msvg2').show();
+
+        highlightSvg('#cell-MORTENSEN_F2_CIRCULATION');
+        $('#loc').text("Main Level (2nd Floor) Ask at Circulation Desk");
+
+        return;
+    }
+
+    // ---------------------------------------
+    // MORE MORTENSEN LOCATIONS GO HERE (SHELVES, MEDIA, REF, ETC.)
+    // ---------------------------------------
+
+} // END MORTENSEN LIBRARY BLOCK
+
 
 
 // ---- MICROFORM OVERRIDE ----
