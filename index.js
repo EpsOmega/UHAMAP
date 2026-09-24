@@ -10,7 +10,11 @@ $(document).ready(function () {
   console.log("cleanCcn", cleanCcn);
   let matchFound = false;
 
+
+
 $('#lib').text(lib);
+
+
 
 (function () {
     const reg = (lib === 'MORTENSEN')
@@ -30,6 +34,28 @@ $('#lib').text(lib);
 })();
 
 $('#ccn').text(decodedCcn);
+
+
+/////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//NEW LOCATION ASSIGNMENTS PLACE UP AT THE TOP OF THE CODE AND THEN EXIT IF FOUND
+//ML1 thru ML25 needs to point to ------>   cell-MORTENSEN_F1_BOUNDPER_RECT1
+if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML25") ){
+   console.log( "cleanCcn", cleanCcn );
+//alert('hi');
+    $('#row1').show();
+    $('#msvg1').show();
+    highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
+    $('#loc').text("Lower Level (1st Floor) Bound");
+    matchFound = true;
+    return;
+    
+}//if (lib === "MORTENSEN") {
+/////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+//cell-MORTENSEN_F1_BOUNDPER_RECT1
 
 // ==========================================
 // ==========================================
