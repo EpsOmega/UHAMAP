@@ -23,7 +23,7 @@ if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1",
     $('#row1').show();
     $('#msvg1').show();
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
-    $('#loc').text("Lower Level (1st Floor) Bound");
+    $('#loc').text("Lower Level (1st Floor) Bound Periodicals");
     matchFound = true;
     return;
     
