@@ -1,4 +1,4 @@
-const debug = true;
+const debug =  true;
 const fill_opacity=0.6;
 $(document).ready(function () {
   const params = new URLSearchParams(window.location.search);
