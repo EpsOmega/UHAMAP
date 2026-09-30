@@ -24,7 +24,7 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML
     $('#row1').show();
     $('#msvg1').show();
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
-    $('#loc').text("Lower Level (1st Floor) Bound");
+    $('#loc').text("Lower Level (1st Floor) Bound Periodicals");
     matchFound = true;
     $('#ccn').text(decodedCcn);
     return;
@@ -40,7 +40,7 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", 
     $('#row1').show();
     $('#msvg1').show();
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_N_TO_Z');
-    $('#loc').text("Lower Level (1st Floor) Bound");
+    $('#loc').text("Lower Level (1st Floor) Bound Periodicals");
     matchFound = true;
     $('#ccn').text(decodedCcn);
     return;
@@ -57,7 +57,7 @@ if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1",
     $('#row1').show();
     $('#msvg1').show();
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
-    $('#loc').text("Lower Level (1st Floor) Bound");
+    $('#loc').text("Lower Level (1st Floor) Bound Periodicals");
     matchFound = true;
     $('#ccn').text(decodedCcn);
     return;
