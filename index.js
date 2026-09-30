@@ -26,6 +26,7 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
     $('#loc').text("Lower Level (1st Floor) Bound");
     matchFound = true;
+    $('#ccn').text(decodedCcn);
     return;
     
 }//if (lib === "MORTENSEN") {
@@ -41,6 +42,7 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", 
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_N_TO_Z');
     $('#loc').text("Lower Level (1st Floor) Bound");
     matchFound = true;
+    $('#ccn').text(decodedCcn);
     return;
     
 }//if (lib === "MORTENSEN") {
@@ -57,6 +59,7 @@ if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1",
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
     $('#loc').text("Lower Level (1st Floor) Bound");
     matchFound = true;
+    $('#ccn').text(decodedCcn);
     return;
     
 }//if (lib === "MORTENSEN") {
