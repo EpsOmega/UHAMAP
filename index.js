@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 $('#lib').text(lib);
 
-
+//cell-MORTENSEN_F1_BOUNDPER_N_TO_Z
 /////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //NEW LOCATION ASSIGNMENTS PLACE UP AT THE TOP OF THE CODE AND THEN EXIT IF FOUND
 //ML1 thru ML25 needs to point to ------>   cell-MORTENSEN_F1_BOUNDPER_RECT1
@@ -29,6 +29,22 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML
     return;
     
 }//if (lib === "MORTENSEN") {
+
+
+//NEW LOCATION ASSIGNMENTS PLACE UP AT THE TOP OF THE CODE AND THEN EXIT IF FOUND
+//ML1 thru ML25 needs to point to ------>   cell-MORTENSEN_F1_BOUNDPER_RECT1
+if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", "GV1584") ){
+   console.log( "cleanCcn", cleanCcn );
+//alert('hi');
+    $('#row1').show();
+    $('#msvg1').show();
+    highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_N_TO_Z');
+    $('#loc').text("Lower Level (1st Floor) Bound");
+    matchFound = true;
+    return;
+    
+}//if (lib === "MORTENSEN") {
+
 
 /////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //NEW LOCATION ASSIGNMENTS PLACE UP AT THE TOP OF THE CODE AND THEN EXIT IF FOUND
