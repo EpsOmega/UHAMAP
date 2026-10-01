@@ -29,23 +29,21 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML
     $('#ccn').text(decodedCcn);
     return;
     
-}//if (lib === "MORTENSEN") {
+}//if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML25") ){
 
 
 //NEW LOCATION ASSIGNMENTS PLACE UP AT THE TOP OF THE CODE AND THEN EXIT IF FOUND
 //ML1 thru ML25 needs to point to ------>   cell-MORTENSEN_F1_BOUNDPER_RECT1
 if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", "GV1584") ){
    console.log( "cleanCcn", cleanCcn );
-//alert('hi');
     $('#row1').show();
     $('#msvg1').show();
-    highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_N_TO_Z');
-    $('#loc').text("Lower Level (1st Floor) Bound Periodicals");
+    highlightSvg('#cell-ALLEN_GV_DANCE');
+    $('#loc').text("Lower Level (1st Floor) Dance");
     matchFound = true;
     $('#ccn').text(decodedCcn);
     return;
-    
-}//if (lib === "MORTENSEN") {
+}//if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", "GV1584") ){
 
 
 /////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -53,7 +51,6 @@ if(lib === "ALLEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "GV1580", 
 //ML1 thru ML25 needs to point to ------>   cell-MORTENSEN_F1_BOUNDPER_RECT1
 if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML25") ){
    console.log( "cleanCcn", cleanCcn );
-//alert('hi');
     $('#row1').show();
     $('#msvg1').show();
     highlightSvg('#cell-MORTENSEN_F1_BOUNDPER_RECT1');
@@ -62,10 +59,8 @@ if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1",
     $('#ccn').text(decodedCcn);
     return;
     
-}//if (lib === "MORTENSEN") {
+}//if(lib === "MORTENSEN" && loc==="BOUNDPER" && callNumberInRange(cleanCcn, "ML1", "ML25") ){
 /////////////////////////////////////////////////////////**********************************************************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
 
 (function () {
     const reg = (lib === 'MORTENSEN')
